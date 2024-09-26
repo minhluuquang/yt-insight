@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "yt-insight"
+version = "0.1.0"
+description = ""
+authors = ["minhlq <minhlq0696@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dspy-ai = "^2.5.0"
+discord-py = "^2.4.0"
+python-dotenv = "^1.0.1"
+youtube-transcript-api = "^0.6.2"
+tiktoken = "^0.7.0"
+tqdm = "^4.66.5"
+openai = "^1.49.0"
+
+[tool.poetry.scripts]
+dev = "yt_insight.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
